@@ -49,9 +49,10 @@ body {
   }
   img {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
+    padding: 20px;
     max-width: 50%;
-    
+    float: left;
   }
   a {
     color: blue;
@@ -71,6 +72,7 @@ body {
     color: #fff;
     display: flex;
     justify-content: space-between;
+    clear: both;
   }
   
   .footer-container {
@@ -102,5 +104,58 @@ body {
   .footer-right a {
     color: #fff;
     text-decoration: none;
+  }
+  .animation-container {
+    background-color: red;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .animated-text {
+    color: white;
+    font-size: 40px;
+    animation: text-animation 4s ease-in-out infinite, glow 1s ease-in-out infinite alternate;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .left-align {
+    width: 50%;
+    float: left;
+    text-align: left;
+  }
+  body {
+    font-family: "Comic Sans MS", sans-serif;
+  }
+  
+  @keyframes text-animation {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    20% {
+      transform: translateY(-20px) scale(1.2);
+      opacity: 0.8;
+    }
+    40% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px white;
+    }
+    100% {
+      text-shadow: 0 0 20px navy;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    /* styles for laptops */
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    /* styles for iPhone 12 Pro */
   }
   
