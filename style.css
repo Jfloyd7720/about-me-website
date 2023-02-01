@@ -41,6 +41,7 @@ h1 {
 p {
   font-size: 18px;
   margin-top: 10px;
+  text-align: left;
   padding: 20px;
 }
 img {
@@ -98,4 +99,56 @@ footer {
 .footer-right a {
   color: #fff;
   text-decoration: none;
+}
+.animation-container {
+  background-color: greenyellow;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animated-text {
+  color: white;
+  font-size: 40px;
+  animation: text-animation 4s ease-in-out infinite, glow 1s ease-in-out infinite alternate;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes text-animation {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px white;
+  }
+  100% {
+    text-shadow: 0 0 20px navy;
+  }
+}
+.left-align {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  /* styles for laptops */
+}
+
+@media only screen and (max-width: 1024px) {
+  /* styles for iPhone 12 Pro */
 }

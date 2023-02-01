@@ -99,4 +99,12 @@ body {
     color: #fff;
     text-decoration: none;
   }
+  @media only screen and (min-width: 1024px) {
+    /* styles for laptops */
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    /* styles for iPhone 12 Pro */
+  }
+  
   

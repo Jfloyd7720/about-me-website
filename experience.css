@@ -49,9 +49,10 @@ body {
   }
   img {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
+    padding: 20px;
     max-width: 50%;
-    
+    float: left;
   }
   a {
     color: blue;
@@ -71,6 +72,7 @@ body {
     color: #fff;
     display: flex;
     justify-content: space-between;
+    clear: both;
   }
   
   .footer-container {
@@ -102,5 +104,12 @@ body {
   .footer-right a {
     color: #fff;
     text-decoration: none;
+  }
+  @media only screen and (min-width: 1024px) {
+    /* styles for laptops */
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    /* styles for iPhone 12 Pro */
   }
   
