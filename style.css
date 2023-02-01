@@ -101,7 +101,7 @@ footer {
   text-decoration: none;
 }
 .animation-container {
-  background-color: greenyellow;
+  background-color: blue;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -142,6 +142,9 @@ footer {
   width: 50%;
   float: left;
   text-align: left;
+}
+body {
+  font-family: "Comic Sans MS", sans-serif;
 }
 
 
