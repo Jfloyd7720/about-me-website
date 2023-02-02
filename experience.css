@@ -148,9 +148,27 @@ body {
       text-shadow: 0 0 10px white;
     }
     100% {
-      text-shadow: 0 0 20px navy;
+      text-shadow: 0 0 20px black;
     }
   }
+  .animated-background {
+    background-image: linear-gradient(to right, #000000, #ffffff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
   @media only screen and (min-width: 1024px) {
     /* styles for laptops */
   }
